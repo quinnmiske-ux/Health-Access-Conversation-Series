@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Health Access Conversations &amp; JeffSolves 2026&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>* { margin: 0; padding: 0; box-sizing: border-box; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; background: #f5f0e8; color: #2a2a2a; line-height: 1.6; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container { max-width: 1400px; margin: 0 auto; padding: 40px 20px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header { text-align: center; margin-bottom: 60px; padding: 40px 20px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.logo { font-size: 2rem; font-weight: 700; letter-spacing: 2px; margin-bottom: 20px; color: #2a2a2a; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tagline { font-size: 1.2rem; color: #ff5722; font-weight: 500; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 40px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card { background: #ffffff; color: #2a2a2a; border-radius: 20px; padding: 40px 32px; position: relative; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; min-height: 280px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(255,87,34,0.2); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card.orange { background: #ff5722; color: #ffffff; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card.blue { background: #4a90a4; color: #ffffff; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card-icon { position: absolute; top: 20px; right: 20px; width: 40px; height: 40px; border-radius: 50%; background: rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 24px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.orange .card-icon { background: rgba(255,255,255,0.2); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card-title { font-size: 2rem; font-weight: 700; margin-bottom: 12px; line-height: 1.2; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card-subtitle { font-size: 1rem; opacity: 0.8; margin-bottom: 16px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card-details { font-size: 0.95rem; margin-top: 16px; padding-top: 16px; border-top: 2px solid rgba(0,0,0,0.1); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.orange .card-details, .blue .card-details { border-top: 2px solid rgba(255,255,255,0.3); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card-details strong { display: block; margin-top: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero-card { grid-column: 1 / -1; background: linear-gradient(135deg, #4a90a4 0%, #5ba3b8 100%); color: #ffffff; min-height: 200px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: default; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hero-card:hover { transform: none; box-shadow: none; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-title { font-size: 2.5rem; font-weight: 800; margin: 60px 0 40px 0; color: #1a1a1a; text-align: center; letter-spacing: 1px; padding: 30px 20px; border-top: 4px solid #1a1a1a; border-bottom: 4px solid #1a1a1a; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cta-button { display: inline-block; background: #ff5722; color: #ffffff; padding: 12px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; margin-top: 16px; transition: all 0.3s ease; border: none; cursor: pointer; font-size: 1rem; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.cta-button:hover { background: #e64a19; transform: scale(1.05); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.info-section { background: #ffffff; border-radius: 20px; padding: 40px; margin-top: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.info-section h3 { color: #4a90a4; margin-bottom: 16px; font-size: 1.4rem; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.info-section p { color: #2a2a2a; margin-bottom: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .card-title { font-size: 1.5rem; } header { margin-bottom: 40px; } }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.expandable-card { background: #ffffff; border-radius: 16px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; transition: all 0.3s ease; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.expandable-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.expandable-header { padding: 18px 28px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.expandable-header h3 { margin: 0; color: #2a2a2a; font-size: 1.1rem; font-weight: 600; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.expand-icon { font-size: 1.6rem; color: #4a90a4; font-weight: 300; transition: transform 0.3s ease; line-height: 1; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.expandable-card.active .expand-icon { transform: rotate(45deg); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.expandable-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; padding: 0 28px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.expandable-card.active .expandable-content { max-height: 2000px; padding: 0 28px 20px 28px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.expandable-content p { margin-bottom: 12px; color: #4a4a4a; line-height: 1.6; font-size: 0.95rem; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.expandable-content p:last-child { margin-bottom: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); overflow-y: auto; animation: fadeIn 0.3s ease; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal.active { display: block; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal-content { background-color: #ffffff; margin: 5% auto; padding: 0; border-radius: 20px; max-width: 700px; position: relative; animation: slideDown 0.3s ease; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes slideDown { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal-header { padding: 40px 40px 30px; border-bottom: 2px solid #f0f0f0; border-radius: 20px 20px 0 0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal-header.orange { background: linear-gradient(135deg, #ff5722 0%, #ff6f40 100%); color: #ffffff; border-bottom: none; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal-header.blue { background: linear-gradient(135deg, #4a90a4 0%, #5ba3b8 100%); color: #ffffff; border-bottom: none; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal-body { padding: 40px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal-title { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal-subtitle { font-size: 1.1rem; opacity: 0.9; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.close-modal { position: absolute; top: 20px; right: 25px; font-size: 2.5rem; font-weight: 300; color: #ffffff; cursor: pointer; line-height: 1; transition: transform 0.2s ease; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.close-modal:hover { transform: rotate(90deg); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-detail { margin-bottom: 24px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-detail-label { font-weight: 600; color: #4a90a4; margin-bottom: 8px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-detail-content { color: #2a2a2a; font-size: 1.05rem; line-height: 1.6; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.register-button { display: block; width: 100%; background: #ff5722; color: #ffffff; padding: 18px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1rem; text-align: center; margin-top: 32px; transition: all 0.3s ease; border: none; cursor: pointer; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.register-button:hover { background: #e64a19; transform: scale(1.02); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.register-button.blue-btn { background: #4a90a4; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.register-button.blue-btn:hover { background: #3a7a8a; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.all-events-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); overflow-y: auto; animation: fadeIn 0.3s ease; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.all-events-modal.active { display: block; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.all-events-content { background-color: #ffffff; margin: 3% auto; padding: 0; border-radius: 20px; max-width: 900px; position: relative; animation: slideDown 0.3s ease; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.all-events-header { background: linear-gradient(135deg, #4a90a4 0%, #5ba3b8 100%); color: #ffffff; padding: 40px 40px 30px; border-radius: 20px 20px 0 0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.all-events-body { padding: 40px; max-height: 70vh; overflow-y: auto; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-card-mini { background: #f9f9f9; border-radius: 12px; padding: 24px; margin-bottom: 20px; border-left: 5px solid #4a90a4; transition: all 0.3s ease; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-card-mini:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateX(5px); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-card-mini.orange-border { border-left-color: #ff5722; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-card-mini.blue-border { border-left-color: #4a90a4; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-mini-title { font-size: 1.4rem; font-weight: 700; color: #2a2a2a; margin-bottom: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-mini-subtitle { font-size: 0.95rem; color: #666; margin-bottom: 16px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-mini-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 16px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-mini-detail { font-size: 0.9rem; color: #4a4a4a; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-mini-detail strong { color: #2a2a2a; display: block; margin-bottom: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-mini-register { display: inline-block; background: #4a90a4; color: #ffffff; padding: 10px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; border: none; cursor: pointer; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-mini-register:hover { background: #3a7a8a; transform: scale(1.05); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-mini-register.orange-btn { background: #ff5722; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-mini-register.orange-btn:hover { background: #e64a19; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-divider { text-align: center; margin: 32px 0 24px; font-size: 1.2rem; font-weight: 600; color: #4a90a4; text-transform: uppercase; letter-spacing: 1px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.prizes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 24px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.prize-item { background: #f9f9f9; border-radius: 12px; padding: 20px; border-left: 4px solid #ff5722; font-size: 0.95rem; color: #2a2a2a; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.prize-item strong { display: block; margin-bottom: 6px; color: #ff5722; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.faq-section { max-width: 1000px; margin: 0 auto 60px; padding: 0 20px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="logo"&gt;HEALTH JUSTICE IS A VERB&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="tagline"&gt;Health Justice is for doing&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="max-width:900px;margin:24px auto 0;font-size:1.15rem;color:#2a2a2a;line-height:1.8;font-weight:500;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;The Do-ers: Conversations with Philadelphia's Health Justice Champions&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="max-width:900px;margin:16px auto 0;font-size:1rem;color:#4a4a4a;line-height:1.8;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>A collaborative series presented by the Jefferson Health Design Lab and Health Tech PHL, highlighting people and groups in Philadelphia who are promoting health justice and improving the health of the people of our city and region—one person at a time.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;max-width:1000px;margin-left:auto;margin-right:auto;padding:0 20px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div style="text-align:center;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div style="font-size:2.8rem;font-weight:700;color:#4a90a4;margin-bottom:8px;"&gt;$0&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div style="font-size:1rem;color:#2a2a2a;font-weight:500;"&gt;Total Raised&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div style="font-size:0.85rem;color:#666;margin-top:4px;"&gt;For Community Organizations&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div style="text-align:center;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div style="font-size:2.8rem;font-weight:700;color:#ff5722;margin-bottom:8px;"&gt;0&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div style="font-size:1rem;color:#2a2a2a;font-weight:500;"&gt;Total Attendees&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div style="font-size:0.85rem;color:#666;margin-top:4px;"&gt;Across All Events&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div style="text-align:center;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div style="font-size:2.8rem;font-weight:700;color:#1a1a1a;margin-bottom:8px;"&gt;4&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div style="font-size:1rem;color:#2a2a2a;font-weight:500;"&gt;Organizations Highlighted&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div style="font-size:0.85rem;color:#666;margin-top:4px;"&gt;Doing the Work&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card hero-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card-title" style="font-size:2.5rem;"&gt;Join the Conversation&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="font-size:1.1rem;max-width:600px;margin:16px auto;"&gt;A two-part program—Spring conversations with Philadelphia's health justice champions, followed by Summer design jams turning insights into action.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-title"&gt;Health Access Conversation Series&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card orange" id="card-march"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card-icon"&gt;+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-title"&gt;March 19&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-subtitle"&gt;Conversation #1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;The State of Health Access in Philly&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Featuring: Accelerate Health Equity &amp; FQHC</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card orange" id="card-may-refugee"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card-icon"&gt;+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-title"&gt;May 21&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-subtitle"&gt;Conversation #2&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;Refugee Care Access&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Featuring: Wyss Wellness Center &amp; SEAMACC</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card orange" id="card-may-food"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card-icon"&gt;+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-title"&gt;May 21&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-subtitle"&gt;Conversation #3&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;Food Access &amp; Health&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Featuring: Bartram's Garden &amp; Sankofa</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card orange" id="card-june-conv"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card-icon"&gt;+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-title"&gt;June 25&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-subtitle"&gt;Conversation #4&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;Health Insurance Access&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Featuring: Fabric Health &amp; Partner</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="info-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;How to Get Involved&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Join us for any or all of the convenings. Each event stands alone, so you can drop in when your schedule allows—or commit to the full journey. The more conversations you attend, the better prepared you'll be for the summer Design Jams.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&lt;strong&gt;Open to all community members.&lt;/strong&gt; No background in healthcare required—just curiosity, empathy, and a desire to be part of the solution.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="text-align:center;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="cta-button" onclick="openAllEventsModal()"&gt;Register for Upcoming Events&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-title"&gt;JeffSolves 2026: Community Design Jams&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card blue" id="card-jam1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card-icon"&gt;+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-title"&gt;Jam 1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-subtitle"&gt;Community Design Jam&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;The State of Health Access in Philly&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Date TBA — 2-week design sprint</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card blue" id="card-jam2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card-icon"&gt;+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-title"&gt;Jam 2&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-subtitle"&gt;Community Design Jam&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;Health Insurance Access&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Date TBA — 2-week design sprint</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card blue" id="card-jam3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card-icon"&gt;+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-title"&gt;Jam 3&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-subtitle"&gt;Community Design Jam&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;Refugee Care Access&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Date TBA — 2-week design sprint</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card blue" id="card-jam4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card-icon"&gt;+&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-title"&gt;Jam 4&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-subtitle"&gt;Community Design Jam&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;Food Access &amp; Health&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Date TBA — 2-week design sprint</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="info-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;About the Community Design Jams&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;After the spring series, each community partner presents a real challenge they need help solving. Participants—students, neighbors, professionals, creatives—form teams and join a two-week design sprint. The process starts asynchronously and culminates in a &lt;strong&gt;live hybrid pitch session&lt;/strong&gt; to community stakeholders. Teams must pitch to be eligible for prizes.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Each Jam is supported by a multidisciplinary Jefferson student &lt;strong&gt;Jam Leader&lt;/strong&gt; who guides teams, connects them with community partners and resources, and keeps momentum throughout the sprint.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 style="margin-top:32px;"&gt;Prizes &amp; Opportunities&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="prizes-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="prize-item"&gt;&lt;strong&gt;Cash Awards&lt;/strong&gt;$250–$500 monetary prizes sponsored by event partners&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="prize-item"&gt;&lt;strong&gt;Continued Collaboration&lt;/strong&gt;Opportunities to keep working with the community partner and Health Design Lab&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="prize-item"&gt;&lt;strong&gt;Mentorship&lt;/strong&gt;Access to industry and community leaders&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="prize-item"&gt;&lt;strong&gt;Recognition&lt;/strong&gt;Features in university publications and media channels&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-title"&gt;Frequently Asked Questions&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="faq-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="expandable-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-header"&gt;&lt;h3&gt;Why This Series Matters&lt;/h3&gt;&lt;span class="expand-icon"&gt;+&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;This series highlights the &lt;strong&gt;do-ers in Philadelphia&lt;/strong&gt;—the organizers, caregivers, and advocates who work tirelessly to promote health in our communities, one person at a time. These conversations do more than inform—they activate.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Everything learned in the spring directly fuels the JeffSolves 2026 Community Design Jams, where participants come together to brainstorm and build solutions. The stories, challenges, and insights shared during the series become the foundation for the design challenges issued by our community partners.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;By the time Summer 2026 arrives, participants will understand the issues, know the people involved, and be ready to collaborate.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="expandable-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-header"&gt;&lt;h3&gt;This Series is for YOU&lt;/h3&gt;&lt;span class="expand-icon"&gt;+&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Anyone who is frustrated with the current state of health and healthcare and is searching for a way to be part of the solution. &lt;strong&gt;Whether you work in healthcare or not, if you believe health is a human right, you belong in this conversation.&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;This is a &lt;strong&gt;low-barrier event&lt;/strong&gt; designed for anyone who wants to learn. You don't need prior experience in health or healthcare—just curiosity, openness, and a belief that health matters. These gatherings are welcoming spaces to hear stories, ask questions, and connect with people doing the work on the ground.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="expandable-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-header"&gt;&lt;h3&gt;What to Expect&lt;/h3&gt;&lt;span class="expand-icon"&gt;+&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Four sessions held in different locations around Philadelphia, each featuring the doers, advocates, and community health champions improving access to care every day. Discussions are followed by a brief facilitated networking opportunity.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p style="background:#f9f9f9;padding:20px;border-radius:12px;margin-top:20px;border-left:4px solid #4a90a4;"&gt;&lt;strong&gt;Support the Do-ers:&lt;/strong&gt; We ask that attendees make a meaningful monetary contribution when registering, although it is not required. A minimum donation of $10 is suggested, and &lt;strong&gt;100% of these funds will be donated directly to the presenting organization.&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="expandable-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-header"&gt;&lt;h3&gt;Who We Are&lt;/h3&gt;&lt;span class="expand-icon"&gt;+&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;Health Tech PHL&lt;/strong&gt; — Our goal is to facilitate connections between all the players in the Philadelphia region: entrepreneurs, clinicians, technologists, activists, and builders. We're interested in connecting people who recognize healthcare as a key opportunity: how do we make it more efficient, more equitable, and more effective, so that it reflects the aspirations of our country, the best of our communities, and the brilliance of humans.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;Jefferson Health Design Lab&lt;/strong&gt; — A hub for human-centered innovation at Jefferson, bringing together students, clinicians, designers, and community partners to create solutions that improve health and healthcare access. This year, we celebrate &lt;strong&gt;10 years of promoting better health through better design.&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="expandable-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-header"&gt;&lt;h3&gt;Is there a cost to attend?&lt;/h3&gt;&lt;span class="expand-icon"&gt;+&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-content"&gt;&lt;p&gt;Free to attend. A suggested $10 contribution supports the presenting community organization—100% donated directly to them.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="expandable-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-header"&gt;&lt;h3&gt;Do I have to attend all four conversations or all four Jams?&lt;/h3&gt;&lt;span class="expand-icon"&gt;+&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-content"&gt;&lt;p&gt;No—attend as many as you like. But the more conversations you join, the better prepared you'll be for the summer Design Jams. Each Jam is a standalone event; join one or all of them.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="expandable-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-header"&gt;&lt;h3&gt;Do I need a team to join a Design Jam?&lt;/h3&gt;&lt;span class="expand-icon"&gt;+&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-content"&gt;&lt;p&gt;No. You can sign up solo—teams will form at the start of each Jam. Attending the Conversation Series makes team formation easier and more natural!&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="expandable-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-header"&gt;&lt;h3&gt;How much time is involved in a Design Jam?&lt;/h3&gt;&lt;span class="expand-icon"&gt;+&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-content"&gt;&lt;p&gt;A flexible few hours per week over two weeks. Work is mostly asynchronous with optional check-ins and a required final pitch. Pitches are hybrid so anyone can participate remotely, but teams must pitch to be eligible for prizes.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="expandable-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-header"&gt;&lt;h3&gt;Do I have to do the Jams if I attend the conversations?&lt;/h3&gt;&lt;span class="expand-icon"&gt;+&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="expandable-content"&gt;&lt;p&gt;No—but you'll probably want to! Many attendees get inspired by the spring conversations and choose to return for the summer Jams to put their ideas into action.&lt;/p&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- All Events Modal --&gt;</p>
+<p class="p1">&lt;div id="allEventsModal" class="all-events-modal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="all-events-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="all-events-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="close-modal" onclick="closeAllEventsModal()"&gt;&amp;times;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="modal-title"&gt;Register for Upcoming Events&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="modal-subtitle"&gt;Choose the conversations and design jams you'd like to attend&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="all-events-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="section-divider"&gt;Spring Conversations&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="event-card-mini orange-border"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-title"&gt;March 19 — Conversation #1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-subtitle"&gt;The State of Health Access in Philly&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Date:&lt;/strong&gt; March 19, 2026&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Location:&lt;/strong&gt; TBD&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Featuring:&lt;/strong&gt; Accelerate Health Equity &amp; FQHC&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="event-mini-register orange-btn" onclick="registerForEvent('march')"&gt;Register for March Event&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="event-card-mini orange-border"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-title"&gt;May 21 — Conversation #2&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-subtitle"&gt;Refugee Care Access&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Date:&lt;/strong&gt; May 21, 2026&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Location:&lt;/strong&gt; Wyss Wellness Center&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Featuring:&lt;/strong&gt; Wyss Wellness Center &amp; SEAMACC&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="event-mini-register orange-btn" onclick="registerForEvent('may-refugee')"&gt;Register for May (Refugee Care) Event&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="event-card-mini orange-border"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-title"&gt;May 21 — Conversation #3&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-subtitle"&gt;Food Access &amp; Health&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Date:&lt;/strong&gt; May 21, 2026&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Location:&lt;/strong&gt; Bartram's Garden&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Featuring:&lt;/strong&gt; Bartram's Garden &amp; Sankofa&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="event-mini-register orange-btn" onclick="registerForEvent('may-food')"&gt;Register for May (Food Access) Event&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="event-card-mini orange-border"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-title"&gt;June 25 — Conversation #4&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-subtitle"&gt;Health Insurance Access&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Date:&lt;/strong&gt; June 25, 2026&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Location:&lt;/strong&gt; TBD&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Featuring:&lt;/strong&gt; Fabric Health &amp; Partner&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="event-mini-register orange-btn" onclick="registerForEvent('june-conv')"&gt;Register for June Event&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="section-divider"&gt;Summer Design Jams&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="event-card-mini blue-border"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-title"&gt;Jam 1 — The State of Health Access in Philly&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-subtitle"&gt;JeffSolves 2026 Community Design Jam&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Date:&lt;/strong&gt; Summer 2026 — TBA&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Format:&lt;/strong&gt; 2-week sprint + hybrid pitch&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="event-mini-register" onclick="registerForEvent('jam1')"&gt;Register for Jam 1&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="event-card-mini blue-border"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-title"&gt;Jam 2 — Health Insurance Access&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-subtitle"&gt;JeffSolves 2026 Community Design Jam&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Date:&lt;/strong&gt; Summer 2026 — TBA&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Format:&lt;/strong&gt; 2-week sprint + hybrid pitch&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="event-mini-register" onclick="registerForEvent('jam2')"&gt;Register for Jam 2&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="event-card-mini blue-border"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-title"&gt;Jam 3 — Refugee Care Access&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-subtitle"&gt;JeffSolves 2026 Community Design Jam&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Date:&lt;/strong&gt; Summer 2026 — TBA&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Format:&lt;/strong&gt; 2-week sprint + hybrid pitch&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="event-mini-register" onclick="registerForEvent('jam3')"&gt;Register for Jam 3&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="event-card-mini blue-border"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-title"&gt;Jam 4 — Food Access &amp; Health&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-subtitle"&gt;JeffSolves 2026 Community Design Jam&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-mini-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Date:&lt;/strong&gt; Summer 2026 — TBA&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="event-mini-detail"&gt;&lt;strong&gt;Format:&lt;/strong&gt; 2-week sprint + hybrid pitch&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="event-mini-register" onclick="registerForEvent('jam4')"&gt;Register for Jam 4&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div style="margin-top:32px;padding:20px;background:#f0f8ff;border-radius:12px;border-left:4px solid #4a90a4;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;strong&gt;Can't decide?&lt;/strong&gt; You can register for multiple events or come back later. Attending the spring conversations is the best way to prepare for the summer Jams—but each event stands alone.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Event Detail Modal --&gt;</p>
+<p class="p1">&lt;div id="eventModal" class="modal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="modal-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-header" id="modalHeader"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="close-modal" onclick="closeModal()"&gt;&amp;times;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="modal-title" id="modalTitle"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="modal-subtitle" id="modalSubtitle"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="event-detail"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-detail-label"&gt;Topic&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-detail-content" id="modalTheme" style="font-weight:600;font-size:1.2rem;margin-bottom:12px;"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-detail-content" id="modalDescription"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="event-detail"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-detail-label"&gt;Date&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-detail-content" id="modalDate"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="event-detail"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-detail-label"&gt;Location&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-detail-content" id="modalLocation"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="event-detail"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-detail-label"&gt;Featuring&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-detail-content" id="modalSpeaker" style="font-weight:600;"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="event-detail-content" id="modalSpeakerBio" style="margin-top:8px;"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="register-button" id="modalRegisterBtn" onclick="alert('Registration links coming soon!')"&gt;Register for This Event&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const eventData = {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'march': { title: 'March 19, 2026', subtitle: 'Health Access Conversation #1', theme: 'The State of Health Access in Philly', description: 'How neighborhood resources, transportation, and infrastructure shape a person\'s ability to access care. Join us to hear from the organizations working every day to bridge these gaps across Philadelphia.', date: 'March 19, 2026', location: 'TBD', speaker: 'Accelerate Health Equity and FQHC', speakerBio: 'Two Philadelphia-based organizations doing groundbreaking work to expand health access and community care across the city.', color: 'orange' },</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'may-refugee': { title: 'May 21, 2026', subtitle: 'Health Access Conversation #2', theme: 'Refugee Care Access', description: 'The unique barriers refugees face—from language access to trauma to navigating unfamiliar health systems. Hear directly from organizations supporting Philadelphia\'s refugee communities every day.', date: 'May 21, 2026', location: 'Wyss Wellness Center', speaker: 'Wyss Wellness Center and SEAMACC', speakerBio: 'Organizations at the forefront of culturally competent care and refugee health support in Philadelphia.', color: 'orange' },</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'may-food': { title: 'May 21, 2026', subtitle: 'Health Access Conversation #3', theme: 'Food Access &amp; Health', description: 'How food insecurity, affordability, and location contribute to chronic disease and health inequity. Learn how community-rooted organizations are growing food access and health equity across Philadelphia.', date: 'May 21, 2026', location: 'Bartram\'s Garden', speaker: "Bartram's Garden and Sankofa", speakerBio: 'Two Philadelphia organizations connecting communities to fresh food, cultural heritage, and equitable health outcomes.', color: 'orange' },</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'june-conv': { title: 'June 25, 2026', subtitle: 'Health Access Conversation #4', theme: 'Health Insurance Access', description: 'The real-world challenges of navigating enrollment, affordability, coverage gaps, and denials. Hear from the people working to make health insurance understandable and accessible for all Philadelphians.', date: 'June 25, 2026', location: 'TBD', speaker: 'Fabric Health and Partner', speakerBio: 'Organizations helping people navigate the complex world of health insurance and benefits enrollment in Philadelphia.', color: 'orange' },</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'jam1': { title: 'Design Jam 1', subtitle: 'JeffSolves 2026: Community Design Jam', theme: 'The State of Health Access in Philly', description: 'A two-week design sprint tackling real challenges around neighborhood health access identified by community partners during the spring conversation series. Teams form, ideate, prototype, and pitch solutions to stakeholders.', date: 'Summer 2026 — Date TBA', location: 'Hybrid (asynchronous sprint + live pitch session)', speaker: 'Supported by a Jefferson Student Jam Leader', speakerBio: 'Each Jam also includes a Challenge Partner providing technical expertise and a virtual collaboration platform throughout the sprint.', color: 'blue' },</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'jam2': { title: 'Design Jam 2', subtitle: 'JeffSolves 2026: Community Design Jam', theme: 'Health Insurance Access', description: 'A two-week design sprint focused on simplifying health insurance navigation. Teams will prototype creative solutions to the real barriers people face in enrollment, affordability, and understanding coverage.', date: 'Summer 2026 — Date TBA', location: 'Hybrid (asynchronous sprint + live pitch session)', speaker: 'Supported by a Jefferson Student Jam Leader', speakerBio: 'Each Jam also includes a Challenge Partner providing technical expertise and a virtual collaboration platform throughout the sprint.', color: 'blue' },</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'jam3': { title: 'Design Jam 3', subtitle: 'JeffSolves 2026: Community Design Jam', theme: 'Refugee Care Access', description: 'A two-week design sprint developing solutions for the unique health access barriers refugees face—language, trauma, and unfamiliar systems. Teams pitch to community stakeholders at the close of the sprint.', date: 'Summer 2026 — Date TBA', location: 'Hybrid (asynchronous sprint + live pitch session)', speaker: 'Supported by a Jefferson Student Jam Leader', speakerBio: 'Each Jam also includes a Challenge Partner providing technical expertise and a virtual collaboration platform throughout the sprint.', color: 'blue' },</p>
+<p class="p1"><span class="Apple-converted-space">        </span>'jam4': { title: 'Design Jam 4', subtitle: 'JeffSolves 2026: Community Design Jam', theme: 'Food Access &amp; Health', description: 'A two-week design sprint addressing food insecurity and its connections to chronic disease and health inequity. Teams prototype and pitch community-driven solutions inspired by the spring conversation series.', date: 'Summer 2026 — Date TBA', location: 'Hybrid (asynchronous sprint + live pitch session)', speaker: 'Supported by a Jefferson Student Jam Leader', speakerBio: 'Each Jam also includes a Challenge Partner providing technical expertise and a virtual collaboration platform throughout the sprint.', color: 'blue' }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function openModal(eventId) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const event = eventData[eventId];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (!event) return;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const modal = document.getElementById('eventModal');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('modalTitle').textContent = event.title;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('modalSubtitle').textContent = event.subtitle;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('modalTheme').textContent = event.theme;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('modalDescription').textContent = event.description;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('modalDate').textContent = event.date;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('modalLocation').textContent = event.location;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('modalSpeaker').textContent = event.speaker;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('modalSpeakerBio').textContent = event.speakerBio;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('modalHeader').className = 'modal-header ' + event.color;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('modalRegisterBtn').className = 'register-button ' + (event.color === 'blue' ? 'blue-btn' : '');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>modal.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.body.style.overflow = 'hidden';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function closeModal() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('eventModal').classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.body.style.overflow = 'auto';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function openAllEventsModal() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('allEventsModal').classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.body.style.overflow = 'hidden';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function closeAllEventsModal() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('allEventsModal').classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.body.style.overflow = 'auto';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function registerForEvent() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alert('Registration links coming soon!');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.addEventListener('DOMContentLoaded', function () {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const cardMap = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'card-march': 'march',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'card-may-refugee': 'may-refugee',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'card-may-food': 'may-food',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'card-june-conv': 'june-conv',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'card-jam1': 'jam1',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'card-jam2': 'jam2',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'card-jam3': 'jam3',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'card-jam4': 'jam4'</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Object.entries(cardMap).forEach(([cardId, eventId]) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const card = document.getElementById(cardId);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (card) card.addEventListener('click', () =&gt; openModal(eventId));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>window.onclick = function (e) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (e.target == document.getElementById('eventModal')) closeModal();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (e.target == document.getElementById('allEventsModal')) closeAllEventsModal();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.expandable-header').forEach(header =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header.addEventListener('click', function () {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const card = this.closest('.expandable-card');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const isActive = card.classList.contains('active');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.expandable-card').forEach(c =&gt; c.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (!isActive) card.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
